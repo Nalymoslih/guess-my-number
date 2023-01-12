@@ -36,28 +36,8 @@ $('.check').addEventListener('click', function () {
       $('.score').textContent = 0;
     }
   }
-  // } else if (guess > secretNumber) {
-  //   if (score > 1) {
-  //     $('.message').textContent = '📈 Too high!';
-  //     score--;
-  //     $('.score').textContent = score;
-  //   } else {
-  //     $('.message').textContent = '💥 You lost the game';
-  //     $('.score').textContent = 0;
-  //   }
-  // } else if (guess < secretNumber) {
-  //   if (score > 1) {
-  //     $('.message').textContent = '📉 Too low!';
-  //     score--;
-  //     $('.score').textContent = score;
-  //   } else {
-  //     $('.message').textContent = '💥 You lost the game';
-  //     $('.score').textContent = 0;
-  //   }
-  // }
 });
 
-// Challenge
 $('.again').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
